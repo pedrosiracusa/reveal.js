@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section >
+
+
+                    <h4>Um tour pelo mundo da</h4>
+                    <h1>Data Science</h1>
+                    <br/>
+                    <p>Pedro C. de Siracusa</p>
+                    <p><small>Biólogo pela UnB | Mestrando no LNCC</small></p>
+                </section>
+
+                <!-- BIG DATA-->
+                <section data-background="#c24c4c">
+                    <section >
+                        <h4>Vivemos na era do</h4>
+                        <h1>Big Data</h1>
+                        <br/>
+                        <p class="fragment fade-up">
+                            Com grandes dados grandes desafios!
+                        </p>
+                    </section>
+
+                    <section data-background-image="https://lnu.se/ImageVault/publishedmedia/8ke8v5il3b4ye0jy0vj2/WiCo_BigData_2267x1146_trasparent.png" data-background-size="80%" data-background-color="#fff">
+                    </section>
+
+                    <!-- An extremely connected world -->
+                    <section>
+                    <h3>Vivemos em um mundo extremamente conectado!</h3>
+                    
+                    </section>
+
+                </section>
+
+				<section data-background="#4c6cc2">
+                    <h4>Mas afinal o que é</h4>
+                    <h1>Data Science?</h1>
+                </section>
+
+				<section data-background="#4c8f4b">
+                    <h4>O perfil do</h4>
+                    <h2>Cientista de Dados</h2>
+                </section>
+
+                <!-- Getting Started -->
+                <section data-background="#8f3399">
+				<section>
+                    <h4>Legal! Tenho interesse!</h4>
+                    <br/>
+                    <h1>Por onde começar?</h1>
+                
+                </section>
+
+                <section>
+                    <h3>1. Interagindo com a comunidade</h3>
+                    <ul>
+                        <li class="fragment fade-up">Grupos de Estudos</li>
+                        <li class="fragment fade-up">Encontros, <i>meetups</i></li>
+                        <li class="fragment fade-up">Hackatons, Datathons e outras competições</li>
+                    </ul>
+                </section>
+
+                <section data-background-iframe="http://pedrosiracusa.github.io/BIOS/">
+                </section>
+
+                <section>
+                    <h3>2. Aprendendo na web</h3>
+                    <ul>
+                        <li>MOOCs <small>Coursera, Udacity, Udemy, Data Camp, [...]</small></li>
+                        <li>Youtube <small>MIT Open Courseware, Siraj Raval</small></li>
+                        <li>Papers (Sci-hub)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>3. Exercitando sua criatividade</h3>
+                    <ul>
+                        <li>Construir plataformas baseadas em dados</li>
+                    </ul>
+                </section>
+
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
