@@ -24,18 +24,34 @@
         <style>
             .reveal h5{
                 font-size:0.6em;
-              } 
+            } 
+            div.right-column{
+               float:right; width:50%
+            }
+            div.left-column{
+               float:left; width:50%
+            }
+            .reveal section img.no-border{
+               border:none;
+               box-shadow:none;
+               background:none;
+            }
         </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-image="https://images.pexels.com/photos/46791/network-cables-cable-plug-patch-46791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-background-color="#fff" >
-                    <h4>Um tour pelo mundo da</h4>
-                    <h1>Data Science</h1>
-                    <br/>
-                    <p>Pedro C. de Siracusa</p>
-                    <p><small>Biólogo pela UnB | Mestrando no LNCC</small></p>
+
+
+                <!-- About Me -->
+                <section>
+                    <section data-background-image="https://images.pexels.com/photos/46791/network-cables-cable-plug-patch-46791.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-background-color="#fff" >
+                        <h4>Um tour pelo mundo da</h4>
+                        <h1>Data Science</h1>
+                        <br/>
+                        <p>Pedro C. de Siracusa</p>
+                        <p><small>Biólogo pela UnB | Mestrando no LNCC</small></p>
+                    </section>
                 </section>
 
                 <!-- BIG DATA-->
@@ -49,8 +65,25 @@
                         </p>
                     </section>
 
+
                     <section data-background-image="https://lnu.se/ImageVault/publishedmedia/8ke8v5il3b4ye0jy0vj2/WiCo_BigData_2267x1146_trasparent.png" data-background-size="80%" data-background-color="#fff">
                     </section>
+
+                    <section>
+                        <h3>A complexidade em 4 V's</h3>
+                        <div style="text-align:left">
+                            <h4>Volume</h4>
+                            <p style="font-size:50%; text-indent:1.5em;">O tamanho do conjunto de dados: Como armazená-lo e processá-lo eficientemente?</p>
+                            <h4>Velocidade</h4>
+                            <p style="font-size:50%; text-indent:1.5em;">A taxa com que dados são produzidos: Também precisam ser processados em tempo restrito</p>
+                            <h4>Variedade</h4>
+                            <p style="font-size:50%; text-indent:1.5em;">A natureza dos dados: Diversidade de formatos e estruturas</p>
+                            <h4>Veracidade</h4>
+                            <p style="font-size:50%; text-indent:1.5em;">A Qualidade dos dados: Dados errados são piores que ausentes!</p>
+                        </div>
+                    </section>
+
+                    <section data-background-image="img/datascience_4vs.jpg" data-background-size="70%" data-background-color="#fff"></section>
 
                     <section>
                     <h6>Um mundo extremamente</h6>
@@ -65,7 +98,7 @@
                         </ul>
                     </div>
                     <div style="float:right; width:50%">
-                        <img src="https://3vowli249lp13hl4bz2ku62r-wpengine.netdna-ssl.com/wp-content/uploads/IoT-1200x1200.png" height="400" >
+                        <img src="https://3vowli249lp13hl4bz2ku62r-wpengine.netdna-ssl.com/wp-content/uploads/IoT-1200x1200.png" height="400" class="no-border">
                     </div>
                     </section>
 
@@ -86,7 +119,7 @@
                     <section data-background-image="https://media3.giphy.com/media/aQCCNezRpb9Hq/giphy.gif">
                         <div style="position:relative">
                             <h2 class="fragment fade-out" style="position:absolute; margin-left:auto; margin-right:auto; left:0; right:0;"data-fragment-index="0">Um dilúvio de dados!</h2>
-                            <h3 class="fragment fade-in" style="position:absolute; margin-left:auto; margin-right:auto; left:0; right:0;" data-fragment-index="0">Mas como transformá-los em ação?</h3>
+                            <h3 class="fragment fade-in" style="position:absolute; margin-left:auto; margin-right:auto; left:0; right:0;" data-fragment-index="0">Mas como usá-los de forma eficiente para tomar decisões?</h3>
                         </div>
                     </section>
 
@@ -97,33 +130,84 @@
 
                 <!-- DATA SCIENCE -->
 				<section data-background="#4c6cc2">
+
                     <section>
                         <h4 class="fragment" data-fragment-index="1">Mas afinal o que é</h4>
                         <h1>Data Science<span class="fragment" data-fragment-index="1">?</span></h1>
+                        <p></p>
                     </section>
+
                     <section>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                        </ul>
+                        <blockquote>
+                            "Data Science is like teenage sex:
+                            Everyone talks about it, nobody really knows how to do it,
+                            everyone thinks everyone else is doing it,
+                            so everyone claims they are doing it."
+                        </blockquote>
                     </section>
-                    <section>
-                        <img src="http://static.wixstatic.com/media/e69387_e533709d33ab4f9285f0e69afcfeec4b.jpeg">
+
+                    <section data-background-color="#fff">
+                        <h4>Entendendo Data Science</h4>
+                        <img src="http://static.wixstatic.com/media/e69387_e533709d33ab4f9285f0e69afcfeec4b.jpeg" class="no-border">
+                        <p class="fragment">Mas como isso é diferente da ciência que todos nós já fazemos?</p>
                     </section>
+
+                    <section data-background-color="#fff">
+                    <div class="right-column">
+                        <a href="http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram" target="_blank"><img src="img/datascience_venn.png" class="no-border" ></a>
+                    </div> 
+                    <div class="left-column">
+                        <h4 style="font-size:0.7em;">O perfil do</h4>
+                        <h3 style="font-size:1em;">Cientista de Dados</h3>
+                        <br/>
+
+                        <p style="font-size:70%">Curiosidade, Criticidade e Criatividade</p>
+                        <p style="font-size:70%">Autonomia para aprender</p>
+                        <p style="font-size:70%" class="fragment grow highlight-blue">Interdisciplinaridade</p>
+                        <p style="font-size:70%">Habilidades em comunicação</p>
+                        <p style="font-size:70%">Trabalho em equipe</p>
+                    </div> 
+                    </section>
+
                     <section>
-                        <h5>Na Administração Pública<h5>
-                        <h3>Serenata de Amor</h3>
+                        <h5>Data Science Mindset</h5>
+                        <br/>
+                        <h4 style="text-align:left">Oportunística</h4>
+                            <p style="text-align:left; text-indent:1.5em; font-size:70%;">Abordagem "<i>Data-driven</i>" e oportunística, usando dados já existentes</p>
+                        <br/>
+                        <h4 style="text-align:left">Colaborativa</h4>
+                            <p style="text-align:left; text-indent:1.5em; font-size:70%;">Compartilhamento de habilidades e troca de experiências</p>
+                        <br/>
+                        <h4 style="text-align:left">Aberta</h4>
+                            <p style="text-align:left; text-indent:1.5em; font-size:70%;">Documentação e divulgação de trabalhos com dados</p>
                     </section>
                 </section>
 
+                <section>
 
-				<section data-background="#4c8f4b">
-                    <h4>O perfil do</h4>
-                    <h2>Cientista de Dados</h2>
+                    <section>Algumas Áreas de Investigação</section>
+                    <section>Data Mining</section>
+                    <section>Machine Learning</section>
+                    <section>Deep Learning</section>
+                    <section>Network Science</section>
+                </section>
+                <section>
+                    <section>Exemplos</section>
+
+                    <section>
+                        <h5>Na Administração Pública<h5>
+                        <h3><a href="https://serenata.ai/" target="_blank" style="color:inherit">Operação Serenata de Amor</a></h3>
+                    </section>
+
+                    <section>
+                        <h5>Na UnB<h5>
+                        <h3><a href="https://lamfo-unb.github.io/" target="_blank" style="color:inherit">LAMFO</a></h3>
+                    </section>
+
                 </section>
 
                 <!-- Getting Started -->
-                <section data-background="#8f3399">
+                <section data-background="#4c8f4b" data-font="#fff">
 				<section>
                     <h4>Legal! Tenho interesse!</h4>
                     <br/>
@@ -160,6 +244,62 @@
                 </section>
 
                 </section>
+
+                <!-- Data Scientist Toolbox -->
+				<section data-background="#4c8f4b">
+                    <section>
+                        <h4>A caixa de ferramentas do</h4>
+                        <h2>Cientista de Dados</h2>
+                        <br/>
+                        <ul>
+                            <li>Linguagens de Programação</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h5>Linguagens de Programação</h5>
+                        <h3>Python</h3>
+                        
+                        <div class="left-column">
+                            <img data-src="img/datascience_python.png" class="no-border" height="200px">
+                        </div>
+                        <div class="right-column">
+                        <p>Por que aprender?</p>
+                        <ul style="font-size:60%">
+                            <li>Alto nível de abstração</li>
+                            <li>Linguagem multipropósito</li>
+                            <li>Baixíssima curva de aprendizado</li>
+                            <li>Grande comunidade envolvida</li>
+                        </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h5>Linguagens de Programação</h5>
+                        <h3>R</h3>
+                        <div class="left-column" >
+                            <img data-src="img/datascience_rlanguage.png" class="no-border" height="200px">
+                        </div>
+                        <div class="right-column" >
+                        <p>Por que aprender?</p>
+                        <ul style="font-size:60%">
+                            <li>Alto nível de abstração</li>
+                            <li>Desenhada para análise de dados</li>
+                            <li>Adotada pela comunidade estatística</li>
+                        </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h5>Linguagens de Programação</h5>
+                        <h3>Javascript</h3>
+                    </section>
+
+                    <section>
+                    </section>
+
+                </section>
+
 			</div>
 		</div>
 
