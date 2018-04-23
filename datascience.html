@@ -36,6 +36,15 @@
                box-shadow:none;
                background:none;
             }
+            .reveal #examples,
+            .reveal #examples h1,
+            .reveal #examples h2,
+            .reveal #examples h3,
+            .reveal #examples h4,
+            .reveal #examples h5,
+            .reveal #examples h6{
+                color:white;
+            }
         </style>
 	</head>
 	<body>
@@ -50,6 +59,7 @@
                         <h1>Data Science</h1>
                         <br/>
                         <p>Pedro C. de Siracusa</p>
+                        <p><small>pedrosiracusa @ gmail.com</small></p>
                         <p><small>Biólogo pela UnB | Mestrando no LNCC</small></p>
                     </section>
                 </section>
@@ -261,9 +271,11 @@
                     </section>
                     <section data-background-iframe="http://pedrosiracusa.com/networks/ub_scn_agg_family/" data-background-color="#fff"></section>
                 </section>
+
+                
                 <!-- Examples -->
-                <section data-background-color="#8f6a4b">
-                    <section><h1>O que tem sido feito pela comunidade?</h1></section>
+                <section id="examples" data-background-color="#e1ae27">
+                    <section><h2>O que tem sido feito pela comunidade?</h2></section>
 
                     <section>
                         <h5>Relevância Nacional<h5>
@@ -354,103 +366,70 @@
                 </section>
                
 
-
-
-                <!-- Getting Started -->
-                <section data-background="#4c8f4b" data-font="#fff">
-				<section>
-                    <h4>Legal! Tenho interesse!</h4>
-                    <br/>
-                    <h1>Por onde começar?</h1>
-                
-                </section>
-
-                <section>
-                    <h3>1. Interagindo com a comunidade</h3>
-                    <ul>
-                        <li class="fragment fade-up">Grupos de Estudos</li>
-                        <li class="fragment fade-up">Encontros, <i>meetups</i></li>
-                        <li class="fragment fade-up">Hackatons, Datathons e outras competições</li>
-                    </ul>
-                </section>
-
-                <section data-background-iframe="http://pedrosiracusa.github.io/BIOS/">
-                </section>
-
-                <section>
-                    <h3>2. Aprendendo na web</h3>
-                    <ul>
-                        <li>MOOCs <small>Coursera, Udacity, Udemy, Data Camp, [...]</small></li>
-                        <li>Youtube <small>MIT Open Courseware, Siraj Raval, [...]</small></li>
-                        <li>Wikipedia (em inglês)</li>
-                        <li>Feeds e Podcasts <small>Data Science Central, Pizza de Dados (BR), [...]</small></li>
-                        <li>Plataformas de DS <small>Kaggle, IBM DSX, [...]</small></li>
-                        <li>Papers (Sci-hub)</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>3. Exercitando sua criatividade</h3>
-                    <ul>
-                        <li>Construir plataformas baseadas em dados</li>
-                    </ul>
-                </section>
-
-                </section>
-
-                <!-- Data Scientist Toolbox -->
-				<section data-background="#4c8f4b">
+                <!-- BIOS -->
+                <section data-background-color="#9a47be">
                     <section>
-                        <h4>A caixa de ferramentas do</h4>
-                        <h2>Cientista de Dados</h2>
+                        <h5>Data Science aplicada à gestão da biodiversidade e recursos naturais</h5>
+                        <br/>
+                        <h4>Núcleo de Estudos</h4>
+                        <h1>BIOS</h1>
+                        <h3 class="fragment">Qual a proposta?</h3>
+                    </section>
+
+                    <section>
+                        <h3>1. Interagir com a Comunidade</h3>
                         <br/>
                         <ul>
-                            <li>Linguagens de Programação</li>
+                            <li class="fragment">Grupos Hacker<br/><small>Calango Hacker Clube</small></li>
+                            <li class="fragment">Encontros e Meetups <br/><small>Pydata, Brasil Digital, Campus Party, (...)</small></li>
+                            <li class="fragment">Hackathons e Datathons</li>
+                            <li class="fragment">Eventos de Divulgação Científica<br/><small>Semana Universitária, Pint Of Science, (...)</small></li>
+                            <li class="fragment">Outros grupos de estudos</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>2. Aprender Juntos</h3>
+                        <br/>
+                        <ul>
+                            <li class="fragment">Estudar por MOOCs<br/><small>Coursera, EDX, Udacity, Udemy, MIT Open Courseware, (...)</small></li>
+                            <li class="fragment">Resolver desafios de dados<br/><small>Kaggle</small></li>
+                            <li class="fragment">Promover seminários abertos, workshops, tutoriais</li>
+                            <li class="fragment">Discutir artigos científicos</li>
+                            <li class="fragment">Escrever artigos de blog</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>3. Desenvolver Projetos</h3>
+                        <br/>
+                        <ul>
+                            <li class="fragment">Encontrar problema em aberto<br/><small>Uma abordagem baseada em dados pode ajudar?</small></li>
+                            <li class="fragment">Formar equipe multidisciplinar<br/><small>Visão do negócio, Programação, Análise de Dados, Design (UX)</small></li>
+                            <li class="fragment">Estabelecer produto viável mínimo (MVP)<br/><small>Parte da solução "funcionando" mesmo que muito simples</small></li>
+                            <li class="fragment">Publicar, divulgar e compartilhar a solução<br/><small>Artigos, código (Github), eventos</small></li>
+                            <li class="fragment">Entender a efetividade da solução e refinar</li>
                         </ul>
                     </section>
 
+                    <section data-background-iframe="http://pedrosiracusa.com/BIOS/"></section>
+                    
                     <section>
-                        <h5>Linguagens de Programação</h5>
-                        <h3>Python</h3>
-                        
-                        <div class="left-column">
-                            <img data-src="img/datascience_python.png" class="no-border" height="200px">
-                        </div>
-                        <div class="right-column">
-                        <p>Por que aprender?</p>
-                        <ul style="font-size:60%">
-                            <li>Alto nível de abstração</li>
-                            <li>Linguagem multipropósito</li>
-                            <li>Baixíssima curva de aprendizado</li>
-                            <li>Grande comunidade envolvida</li>
-                        </ul>
-                        </div>
+                        <h3>Primeiros Passos</h3>
+                        <br/>
+                        <ol>
+                            <li class="fragment">Participar de eventos publicados no grupo<br/><small>Seminários LAMFO, Pydata, Python Cerrado, Brasil 100% Digital</small></li>
+                            <li class="fragment">Aprender uma linguagem de programação<br/><small><b>Python</b>, R, Javascript, Shell Script</small></li>
+                            <li class="fragment">Temas da matemática/estatística<br/><small>Álgebra Linear, Cálculo, Otimização, Probabilidade, Teste de Hipóteses</small></li>
+                        </ol>
                     </section>
+                </section>
 
+                <!-- Finish -->
+                <section data-background-color="white">
                     <section>
-                        <h5>Linguagens de Programação</h5>
-                        <h3>R</h3>
-                        <div class="left-column" >
-                            <img data-src="img/datascience_rlanguage.png" class="no-border" height="200px">
-                        </div>
-                        <div class="right-column" >
-                        <p>Por que aprender?</p>
-                        <ul style="font-size:60%">
-                            <li>Alto nível de abstração</li>
-                            <li>Desenhada para análise de dados</li>
-                            <li>Adotada pela comunidade estatística</li>
-                        </ul>
-                        </div>
+                        <h1>Obrigado!</h1>
+                        <br/>
+                        <h3 style="text-transform:none">pedrosiracusa @ gmail.com</h3>
                     </section>
-
-                    <section>
-                        <h5>Linguagens de Programação</h5>
-                        <h3>Javascript</h3>
-                    </section>
-
-                    <section>
-                    </section>
-
                 </section>
 
 			</div>
